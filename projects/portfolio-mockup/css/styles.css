@@ -1,3 +1,4 @@
+/*addresses default css behaviour within all browsers*/
 html,
 body,
 h1,
@@ -15,6 +16,11 @@ main {
 
 }
 
+.logo img {
+  position: relative;
+  top: 10%;
+}
+
 .credits {
   position: absolute;
   top: 3%;
@@ -23,7 +29,7 @@ main {
 .fullName {
   position: absolute;
   right: 20%;
-  top: 20%;
+  top: 16%;
 
 }
 
@@ -50,6 +56,40 @@ hr {
 
 }
 
+.agrigento img,
+.bucharest img,
+.sanFrancisco img {
+  margin-top: 10%;
+/*  margin-right: 12%;*/
+
+}
+
+h2 {
+  order: 1;
+  position: absolute;
+  left: 40%;
+}
+
+.agrigento img {
+  order: 2;
+}
+
+.bucharest img {
+  order: 3;
+}
+
+.sanFrancisco img {
+  order: 4;
+}
+
 figcaption {
   text-align: center;
+}
+
+/*RESPONSIVE LAYOUT */
+
+@media screen and (min-width: 400px) {
+  .featured-image img {
+    width: 100%;
+  }
 }
