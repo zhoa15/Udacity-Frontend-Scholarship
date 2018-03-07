@@ -89,7 +89,41 @@ figcaption {
 /*RESPONSIVE LAYOUT */
 
 @media screen and (min-width: 400px) {
+  .logo {
+    position: relative;
+    bottom: 90px;
+  }
+
+  .fullName {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  a {
+    display: none;
+  }
+
   .featured-image img {
     width: 100%;
+  }
+
+  .travel-photos {
+    flex-direction: column;
+  }
+
+  .agrigento img,
+  .bucharest img,
+  .sanFrancisco img {
+   width: 100%;
+
   }
 }
