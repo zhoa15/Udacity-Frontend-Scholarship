@@ -1,6 +1,5 @@
 html,
 body,
-figure,
 h1,
 h2 {
   margin: 0;
@@ -8,26 +7,49 @@ h2 {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 main {
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .credits {
-  position: relative;
-  bottom: 3%;
+  position: absolute;
+  top: 3%;
 }
 
 .fullName {
-  justify-content: flex-end;  
+  position: absolute;
+  right: 20%;
+  top: 20%;
+
 }
 
-.fullName,
-.credits {
-  display: inline-block;
+hr {
+  width: 100%;
+}
+
+.travel-photos {
+  display: inline-flex;
+}
+
+.agrigento,
+.bucharest,
+.sanFrancisco {
+  flex-basis: 30%;
+  opacity: 0.8;
+
+}
+
+.agrigento:hover,
+.bucharest:hover,
+.sanFrancisco:hover {
+  opacity: 1.0;
+
+}
+
+figcaption {
+  text-align: center;
 }
